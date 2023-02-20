@@ -10,4 +10,11 @@ public class InvoiceGenerator {
             return Minimum_Fare;
         return cost;
     }
+    public double calculateFareForMultipleRides(Ride[] rides) {
+        double cost = 0;
+        for (Ride ride : rides) {
+            cost = cost + this.calculateFare(ride.distance, ride.time);
+        }
+        return cost;
+    }
 }
