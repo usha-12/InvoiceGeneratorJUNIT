@@ -4,11 +4,13 @@ public class Invoice_Description {
     public int totalNoOfRide;
     public double fare;
     public double avgFare;
+    public boolean normalRide;
 
-    public Invoice_Description(int totalNoOfRide, double fare, double avgFare) {
+    public Invoice_Description(int totalNoOfRide, double fare, boolean normalRide) {
         this.totalNoOfRide = totalNoOfRide;
         this.fare = fare;
         this.avgFare = avgFare;
+        this.normalRide = normalRide;
     }
 
     @Override
@@ -26,6 +28,16 @@ public class Invoice_Description {
             return false;
         return true;
 
+    }
+
+    @Override
+    public String toString() {
+        return "Invoice_Description{" +
+                "totalNoOfRide=" + totalNoOfRide +
+                ", fare=" + fare +
+                ", avgFare=" + avgFare +
+                ", normalRide=" + normalRide +
+                '}';
     }
     }
 
