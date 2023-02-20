@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f551ebc0-e389-47ed-81c5-cab8e83099d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/invoicegenerator/Invoice_Description.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/invoicegenerator/InvoiceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/invoicegenerator/InvoiceGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/invoicegenerator/Ride.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/invoicegenerator/Ride.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/invoicegenerator/RideRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/brideglabz/invoicegenerator/InvoiceGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/invoicegenerator/InvoiceGeneratorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

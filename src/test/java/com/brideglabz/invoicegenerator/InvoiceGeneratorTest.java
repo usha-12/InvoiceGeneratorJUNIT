@@ -36,10 +36,19 @@ public class InvoiceGeneratorTest {
         Assert.assertEquals(30.0, fare, 0.0);
     }
     @Test
-    public void givenMultipleRides_shouldReturn_invoiceSummary() {
+    public void givenMultipleRides_shouldReturn_invoiceDescription() {
         Ride[] rides = { new Ride(2.0, 5), new Ride(0.1, 1) };
         Invoice_Description actualDescription = invoiceGenerator.calculateFareDescription(rides);
         Invoice_Description expectedDescription = new  Invoice_Description(2, 30.0,2.0);
+        Assert.assertEquals(expectedDescription, actualDescription);
+    }
+    @Test
+    public void givenUserId_shouldReturn_invoiceDescriptionList() {
+        String userId = "abc@gmail.com";
+        Ride[] rides = { new Ride(2.0, 5), new Ride(0.1, 1) };
+        invoiceGenerator.addRides(userId,rides);
+        Invoice_Description actualDescription = invoiceGenerator.getInvoiceDescription(userId);
+        Invoice_Description expectedDescription = new Invoice_Description(2, 30.0,2.0);
         Assert.assertEquals(expectedDescription, actualDescription);
     }
 }
